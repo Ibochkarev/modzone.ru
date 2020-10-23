@@ -2,16 +2,17 @@ $breadcrumb-separator: '/' !default;
 $breadcrumb-spacing: 0.5rem !default;
 
 .breadcrumbs {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .breadcrumb {
+    background-color: transparent;
+    color: #111;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    color: #2c4251;
 
     &__item + &__item::before {
         display: inline-block;
@@ -21,13 +22,10 @@ $breadcrumb-spacing: 0.5rem !default;
     }
 
     &__link {
-        color: #2c4251;
-        font-family: 'Lato-Light', sans-serif;
         font-size: 18px;
     }
 
     &__title--current {
-        font-family: 'Lato-Light', sans-serif;
         font-size: 18px;
         color: #5a7684;
     }

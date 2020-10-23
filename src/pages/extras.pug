@@ -1,0 +1,42 @@
+extends common/layout
+
+block content
+  main.main
+    include common/breadcrumb.pug
+    section.py-7.bg-light
+        .container
+          .row
+            .col-12
+              h2.mb-5.text-center Мои дополнения
+              h6.heading-xxs.mb-10.text-center.text-gray-400 Все мои дополнения доступны в магазине modstore.pro. Бесплатные также можно скачать в официальном репозитории modx.com.
+          .row
+            .col-12.col-md-6
+              .card.mb-3.shadow.shadow-hover
+                .row.g-0
+                  .col-md-4
+                    img(src="/img/blog-3.jpg" alt="...")
+                  .col-md-8
+                    .card-body
+                      h5.card-title.text-body oneBooking
+                      p.card-text
+                        | Посуточная система бронирования объектов (номера, автомобили и т.д.).
+                      p.card-text
+                        small.text-muted 17.02.2020
+                      .card-body-buttons
+                        a.btn.btn-success.mr-2(href="#") Демо
+                        a.btn.btn-info(href="#") Документация
+            .col-12.col-md-6
+              .card.mb-3.shadow.shadow-hover
+                .row.g-0
+                  .col-md-4
+                    img(src="/img/blog-3.jpg" alt="...")
+                  .col-md-8
+                    .card-body
+                      h5.card-title.text-body oneBooking
+                      p.card-text
+                        | Посуточная система бронирования объектов (номера, автомобили и т.д.).
+                      p.card-text
+                        small.text-muted 17.02.2020
+                      .card-body-buttons
+                        a.btn.btn-success.mr-2(href="#") Демо
+                        a.btn.btn-info(href="#") Документация
