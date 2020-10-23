@@ -1,5 +1,18 @@
-+b.HEADER.header
-  .container
-    .row
-      .col-12
-        +e.text Header
+.header
+  nav.navbar.navbar-expand-lg.navbar-light.bg-white
+    .container
+      a.navbar-brand(href="") MODZONE
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.ml-xl-auto
+          li.nav-item
+            a.nav-link(href="") Главная
+          li.nav-item
+            a.nav-link(href="") Дополнения
+          li.nav-item
+            a.nav-link(href="") Документация
+          li.nav-item
+            a.nav-link(href="") Блог
+          li.nav-item
+            a.nav-link(href="") Контакты

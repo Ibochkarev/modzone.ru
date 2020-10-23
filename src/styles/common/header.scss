@@ -1,6 +1,47 @@
 @import '../mixins/media';
 
-header {
-    @include media-tablet {
+.navbar {
+    padding: 1.5rem 1rem;
+    .nav-link {
+        font-family: 'Lato-Medium';
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #111;
+    &:focus,
+    &:hover {
+        color: #ff6f61;
+    }
+}
+.navbar-light .navbar-toggler {
+    color: #111;
+    border-color: transparent;
+}
+.navbar-toggler {
+    padding: 0.25rem 0;
+    font-size: 0.9375rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar-expand-xl .navbar-nav {
+        flex-direction: row;
+    }
+    .ml-xl-auto,
+    .mx-xl-auto {
+        margin-left: auto !important;
     }
 }

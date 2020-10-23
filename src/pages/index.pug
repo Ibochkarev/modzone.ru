@@ -1,9 +1,47 @@
 extends common/layout
 
 block content
-  +b.DIV.main
-    .container
-      .row
-        .col-12
-          +e.H2.title Title
-      include includes/index/banner
+  main.main
+    include includes/index/banner
+    .py-12
+      .container
+        .row.justify-content-center
+          .col-12.col-md-10.col-lg-8.col-xl-6
+            h2.mb-4.text-center Дополнения
+
+    section.py-12.bg-light
+      .container
+        .row
+          .col-12
+            h6.heading-xxs.mb-3.text-center.text-gray-400 Мой блог
+            h2.mb-10.text-center Последнее в блоге
+        .row
+          .col-12.col-md-4
+            .card.mb-7.shadow.shadow-hover.lift
+              a(href='blog-post.html')
+                img.card-img-top(src='/img/blog-1.jpg' alt='...')
+              .card-body.px-8.py-7
+                p.mb-3.font-size-xs.text-muted Сегодня в 12:10
+                h6.mb-0
+                  a.text-body(href='blog-post.html') ZoomX. Первый релиз
+          .col-12.col-md-4
+            .card.mb-7.shadow.shadow-hover.lift
+              a(href='blog-post.html')
+                img.card-img-top(src='/img/blog-2.jpg' alt='...')
+              .card-body.px-8.py-7
+                p.mb-3.font-size-xs.text-muted 27 сентября 2020
+                h6.mb-0
+                  a.text-body(href='blog-post.html') ZoomX. Принцип действия
+          .col-12.col-md-4
+            .card.mb-7.shadow.shadow-hover.lift
+              a(href='blog-post.html')
+                img.card-img-top(src='/img/blog-3.jpg' alt='...')
+              .card-body.px-8.py-7
+                p.mb-3.font-size-xs.text-muted 15 сентября 2020
+                h6.mb-0
+                  a.text-body(href='blog-post.html') Вектор на шаблонизаторы PHP
+        .row
+          .col-12
+            .mt-7.text-center
+              a.link-underline(href='blog.html') Все статьи
+
